@@ -10,17 +10,18 @@
 - CSS
 - JAVASCRIPT
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://fullstop125.github.io/my-Capstone-Project/)
 
+[Live Video Link](https://www.loom.com/share/c9cc966c717d47b6926e8fb40df409a1)
 ## Authors
 
 👤 **MOMANYI HASSAN**
 
-- GitHub: [@githubhandle](https://github.com/fullstop125)
-- Twitter: [@twitterhandle](https://twitter.com/moseshassany)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/momanyi-hassan-32a489180/)
+- GitHub: [@fullstop125](https://github.com/fullstop125)
+- Twitter: [@moseshassany](https://twitter.com/moseshassany)
+- LinkedIn: [momanyihassan](https://linkedin.com/in/momanyi-hassan-32a489180/)
 
 ## 🤝 Contributing
 

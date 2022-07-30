@@ -68,7 +68,7 @@ header {
   height: auto;
   gap: 10px;
   z-index: 2;
-  background-image: url('./images/background.png');
+  background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -221,12 +221,12 @@ nav {
 }
 
 .main-container__content-info {
-  background-color: #fff;
   border: 0.1em solid #272a31;
-  padding: 1rem;
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
-  z-index: 11100;
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #ededed;
 }
 
 .main-container__content-date {
@@ -587,7 +587,7 @@ nav {
 
 .partner {
   display: none;
-  background-color: #272a31;
+  background-color: rgb(91, 91, 91);
   padding: 23px;
   margin-top: 10px;
   font-size: 16px;
@@ -718,10 +718,10 @@ footer span {
     background-color: #aca9a9;
     width: 100%;
     height: 70px;
-    display: flex;
+    display: grid;
     padding-inline-start: 200px;
     padding-inline-end: 200px;
-    flex-direction: row;
+    grid-template-columns: 1fr 5fr 1fr;
     align-items: center;
     justify-content: space-between;
   }
@@ -752,7 +752,7 @@ footer span {
   }
 
   header {
-    background-image: url('./images/background.png');
+    background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
   }
 
@@ -790,9 +790,9 @@ footer span {
   }
 
   .main-container__content-info {
-    width: 60%;
+    width: 80%;
     background-color: #fff;
-    border: 0.1em solid #272a31;
+    border: 0.1em solid #8f8f8f;
     padding: 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -982,7 +982,7 @@ footer span {
   }
 
   .footer .container img {
-    width: 200px;
+    width: 150px;
     height: 100px;
   }
 
@@ -1032,6 +1032,7 @@ footer span {
 
   .footer .container span {
     font-size: 1em;
+    color: #8f8f8f;
   }
 
   /* Desktop Version End */
