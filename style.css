@@ -1,0 +1,1041 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+:root {
+  --customBlack: #272a31;
+  --customOrange: #ec5242;
+  --customGrey: #d3d3d3;
+  --media-color: #7f8cff;
+  --main-font: 'COCOGOOSE', sans-serif;
+  --secondary-font: 'lato', sans-serif;
+  --icons-font: 'font social icons 2018', sans-serif;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  background-color: #d3d3d3;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo a {
+  font-family: "lato", sans-serif;
+  color: white;
+}
+
+.status-bar {
+  display: none;
+  width: 100%;
+  height: 30px;
+  background-color: #272a31;
+}
+
+.btn-join a {
+  color: white;
+}
+
+.status-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.status-bar ul a {
+  font-family: "lato", sans-serif;
+  color: white;
+}
+
+/* Header Section start */
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  z-index: 2;
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-family: "lato", sans-serif;
+  justify-content: space-between;
+  color: #272a31;
+}
+
+.menu-items {
+  position: fixed;
+  background-color: #272a31;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  display: none;
+  text-align: center;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+.menu-items-desktop {
+  display: none;
+}
+
+.menu-items li {
+  border: none;
+}
+
+.menu-items li a {
+  font-family: "lato", sans-serif;
+  color: #fff;
+  font-size: 22px;
+}
+
+.menu-items li a:hover {
+  font-family: "lato", sans-serif;
+  color: #ec5242;
+  font-size: 22px;
+  transition: 200ms ease-in-out;
+}
+
+.x-icon {
+  position: fixed;
+  display: none;
+  color: #fff;
+  padding: 10px;
+  z-index: 2;
+  font-size: 40px;
+}
+
+.menu-icon {
+  display: block;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.main-container__content {
+  padding: 2em;
+  margin: 3em 0;
+}
+
+.main-container__content h2 {
+  text-transform: uppercase;
+  font-family: 'cocogoose-pro', sans-serif;
+  background: url('https://wallpaperaccess.com/full/1818031.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-container__content h2 {
+  text-transform: uppercase;
+  font-family: 'cocogoose-pro', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ec5242;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.about-container__content {
+  padding: 2em;
+  margin: 3em 0;
+  text-align: center;
+}
+
+.main-container__content .main-container__content-header {
+  text-transform: uppercase;
+  font-family: 'cocogoose-pro', sans-serif;
+  font-size: 3.6em;
+  font-weight: bold;
+  color: hsla(6, 100%, 59%, 0.7);
+  opacity: 0.9;
+  padding-bottom: 1rem;
+  text-align: start;
+  background: url('https://wallpaperaccess.com/full/1818031.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-container__content .main-container__content-header {
+  text-transform: uppercase;
+  font-family: 'cocogoose-pro', sans-serif;
+  font-size: 3.6em;
+  font-weight: bold;
+  color: hsla(6, 100%, 59%, 0.7);
+  opacity: 0.9;
+  padding-bottom: 1rem;
+  text-align: center;
+  background: url('https://wallpaperaccess.com/full/1818031.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.demo-text {
+  font-size: 80px;
+  font-weight: 700;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+}
+
+.main-container__content-header .normal-font {
+  font-family: "Lato", sans-serif;
+}
+
+.main-container__content-info {
+  border: 0.1em solid #272a31;
+  font-family: 'Lato', sans-serif;
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #ededed;
+}
+
+.main-container__content-date {
+  font-family: 'cocogoose-pro', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.main-container__content-date .normal-font {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.location {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-title {
+  color: rgb(210, 8, 8);
+  margin-left: 10px;
+}
+
+.header-desc {
+  font-size: 20px;
+  margin: 10px;
+  border: 0.5px solid gray;
+  background-color: #f4f0f0;
+  font-family: "lato", sans-serif;
+  color: #272a31;
+  padding: 10px;
+  margin-top: 210px;
+  font-weight: bold;
+}
+
+.sub-desc {
+  font-weight: bold;
+  color: #ec5242;
+  font-family: "lato", sans-serif;
+}
+
+.underline {
+  color: #ec5242;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: "lato", sans-serif;
+}
+
+/* Header Section start */
+
+/* About Section Start */
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: white;
+  gap: 10px;
+}
+
+.about-logo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  height: auto;
+  gap: 20px;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+}
+
+.about-logo p {
+  font-size: 20px;
+  font-weight: 550;
+  padding-bottom: 1em;
+  font-family: 'Lato', sans-serif;
+}
+
+.row {
+  align-items: center;
+  width: 40px;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+.about-logo img {
+  width: 300px;
+  height: 100px;
+}
+
+.line {
+  margin-top: 30px;
+  width: 100%;
+  height: 1px;
+  background-color: #828282;
+}
+
+.conference {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.conference .conference-container .transparent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(6, 100%, 59%, 0.9);
+  opacity: 0.9;
+  padding: 2em;
+}
+
+.twenty {
+  background: url('./images/3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conference-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.nineteen {
+  background: url('./images/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1em;
+}
+
+.conference-container__head {
+  color: #fff;
+  font-size: 3em;
+  opacity: 1;
+}
+
+.visible {
+  opacity: 1;
+  color: #fff;
+}
+
+/* About Section End */
+
+/* Top Technologies Start  */
+.top-lang {
+  width: 100%;
+  height: auto;
+  background-color: #272a31;
+  background-image: url('./images/pattern_bg.png');
+}
+
+.top-lang h2 {
+  font-size: 2em;
+  font-family: "lato", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.top-lang .top-title::after {
+  content: "";
+  display: block;
+  padding-top: 0.5rem;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 0.1rem solid #ec5242;
+}
+
+.top-lang .card {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.top-lang .card .card-body {
+  width: 100%;
+  max-width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(128, 127, 127, 0.1921568627);
+  margin: 0 auto;
+}
+
+.top-lang .card-body img {
+  width: 68px;
+  height: 68px;
+  background-color: transparent;
+  display: flex;
+  padding: 5px;
+}
+
+.card-desc h2 {
+  font-size: 20px;
+  font-family: "lato", sans-serif;
+}
+
+.top-lang .card-body h2 {
+  width: 30px;
+  color: #ec5242;
+  font-size: 16px;
+  font-family: "lato", sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.top-lang .card .card-body p {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 185px;
+  margin: 0 auto;
+  font-family: "lato", sans-serif;
+}
+
+.btn-join {
+  padding: 20px;
+  align-items: center;
+  background-color: #ec5242;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  font-family: "lato", sans-serif;
+}
+
+.btn-join:hover {
+  background-color: #272a31;
+  font-family: "lato", sans-serif;
+  color: white;
+  transition: 2000ms ease-in-out;
+}
+
+/* Top Technologies End  */
+
+/* Top Developer Section Start */
+.top-develop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.develop-title {
+  text-align: center;
+  color: #272a31;
+  font-size: 2em;
+  padding-bottom: 0.5rem;
+  font-family: 'lato', sans-serif;
+}
+
+.develop-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  border-bottom: 2px solid #ec5242;
+}
+
+.top-area .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-image: url('./images/chess-board-svgrepo-com.svg');
+  background-size: 50px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.top-area .hide {
+  display: none;
+}
+
+.top-area .card .card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-area .card-body img {
+  width: 10px;
+  height: 10%;
+  flex: 1;
+}
+
+.top-area .card-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 5px;
+}
+
+.div-card-line {
+  width: 45px;
+  height: 1px;
+  background-color: #aca9a9;
+}
+
+.top-area .card-desc .desc {
+  color: #ec5242;
+  font-style: italic;
+}
+
+.top-develop .btn-more {
+  padding: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-more i {
+  color: #ec5242;
+}
+
+/* Top Developer Section End */
+
+/* Partner Section Start */
+.about-partner {
+  background-color: #272a31;
+  padding: 23px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #828282;
+  font-family: "lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.partner {
+  display: none;
+  background-color: rgb(91, 91, 91);
+  padding: 23px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #828282;
+  font-family: "lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.titleNumbre {
+  text-align: center;
+  color: white;
+  font-family: "lato", sans-serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.numbersContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Partner Section End */
+
+/* Footer Section Start */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 123px;
+  text-align: center;
+}
+
+.footer-img {
+  width: 89px;
+  height: 67px;
+  padding: 10px;
+}
+
+footer span {
+  font-size: 11px;
+  font-weight: bold;
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  text-align: center;
+}
+
+.logo-color {
+  color: #ec5242;
+  font-family: "lato", sans-serif;
+  font-size: 13px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section End */
+
+/* Media Query Start */
+@media (min-width: 768px) {
+  /* Desktop Version Start */
+  .status-bar {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    padding-inline-end: 100px;
+    background-color: #272a31;
+  }
+
+  .about-desc a {
+    color: #ec5242;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .btn-join a {
+    color: white;
+  }
+
+  .status-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .status-bar ul a {
+    color: white;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    width: 268px;
+    display: block;
+    color: white;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 50px;
+  }
+
+  nav {
+    font-size: 1em;
+    background-color: #aca9a9;
+    width: 100%;
+    height: 70px;
+    display: grid;
+    padding-inline-start: 200px;
+    padding-inline-end: 200px;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-items-desktop {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    padding: 0.2em 0.25em;
+  }
+
+  .btn-menu {
+    text-align: center;
+    border: 3px solid #ec5242;
+    padding: 5px;
+  }
+
+  .menu-items-desktop li a {
+    color: white;
+  }
+
+  .menu-items-desktop li a:hover {
+    color: #ec5242;
+    transition: 200ms ease-in-out;
+  }
+
+  header {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+  }
+
+  .main-container__content {
+    padding: 2em;
+    margin: 3em 0;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container__content-header {
+    width: 70%;
+    text-transform: uppercase;
+    font-family: 'L ato', sans-serif;
+    font-size: 3.6em;
+    font-weight: bold;
+    color: hsla(6, 100%, 59%, 0.7);
+    opacity: 0.9;
+    padding-bottom: 1rem;
+    background: url('https://wallpaperaccess.com/full/1818031.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .main-container__content .main-container__content-header .normal-font {
+    font-family: "Lato", sans-serif;
+  }
+
+  .main-container__content-info {
+    width: 80%;
+    background-color: #fff;
+    border: 0.1em solid #8f8f8f;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    z-index: 11100;
+  }
+
+  .main-container__content .main-container__content-date {
+    font-family: 'cocogoose-pro', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+
+  .main-container__content .main-container__content-date .normal-font {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .main-container__content .location {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  header .header-desc {
+    width: 440px;
+    font-size: 20px;
+    margin: 0;
+    border: none;
+    background-color: unset;
+    color: #fff;
+    padding: 10px;
+    margin-top: 220px;
+    font-weight: bold;
+    text-align: start;
+  }
+
+  header .sub-desc {
+    width: 440px;
+    font-size: 15px;
+    border: none;
+    background-color: unset;
+    color: #ec5242;
+    padding: 10px;
+    font-weight: bold;
+    text-align: start;
+  }
+
+  header .underline {
+    width: 440px;
+    border: none;
+    margin-left: 54px;
+    background-color: unset;
+    color: #fff;
+    text-align: start;
+  }
+
+  header .underline:hover {
+    width: 440px;
+    border: none;
+    margin-left: 54px;
+    background-color: unset;
+    color: #ec5242;
+    text-align: start;
+    transition: 200ms ease-in-out;
+  }
+
+  .about-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-desc p {
+    color: white;
+    width: 50%;
+    text-align: center;
+  }
+
+  .cards-area .card .card-body {
+    width: 180px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-lang {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-lang .cards-area {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .top-lang h2 {
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .card {
+    width: 50px;
+    height: 70px;
+  }
+
+  .top-area .card {
+    width: 50%;
+    height: auto;
+  }
+
+  .top-area .card .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-area .card .card-body:hover {
+    border: 1px solid #ec5242;
+    transition: 200ms ease-in-out;
+  }
+
+  .top-lang .cards-area .card .card-body:hover {
+    border: 1px solid #ec5242;
+    transition: 200ms ease-in-out;
+  }
+
+  .partner {
+    display: flex;
+  }
+
+  .top-develop h2 {
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .card .card-body img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card .card-body h2 {
+    align-items: center;
+    width: 100px;
+  }
+
+  .card .card-body p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .btn-join {
+    background-color: unset;
+    text-decoration: underline;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .btn-join:hover {
+    background-color: #ec5242;
+    color: white;
+    transition: 200ms ease-in-out;
+  }
+
+  .top-develop {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .container img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .top-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .top-area .hide {
+    display: flex;
+  }
+
+  .top-area .card .card-body .card-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .top-area .card .card-body .card-desc p {
+    text-align: start;
+  }
+
+  .top-area .card .card-body img {
+    width: 10px;
+    height: 168px;
+  }
+
+  .top-develop .btn-more {
+    display: none;
+  }
+
+  .conference {
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+    gap: 2em;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .container span {
+    font-size: 1em;
+    color: #8f8f8f;
+  }
+
+  /* Desktop Version End */
+
+  /* Media Query End */
+}
